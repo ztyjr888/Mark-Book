@@ -1,0 +1,9 @@
+{
+  "name": "Mark",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "Common":"~1.0.0",
+    "mongodb":"~2.0.28"
+  }
+}

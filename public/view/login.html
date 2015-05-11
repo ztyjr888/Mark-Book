@@ -1,0 +1,82 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>MARK</title>
+<link rel="stylesheet" href="../css/bootstrap.min.css">
+<link rel="stylesheet" href="../css/font-awesome.min.css">
+<link rel="stylesheet" href="../css/mark.css">
+<link href="../image/markweblogo.png" rel="shortcut icon" type="image/png">
+<script src="../js/front/jquery/jquery-1.11.1.js"></script>
+<script src="../js/front/util/prop.js"></script>
+<script src="../js/front/ajax/login.js"></script>
+</head>
+<body>
+      <div id="mk-loading" butterbar="" class="loading-hide">
+          <div class="loading-wrap"><h3 class="login-logo"><span>MARK</span></h3></div>
+          <img src="../image/markbg.jpg" style="display:none;">
+      </div>
+	  
+	  <div>
+		<div class="login-content mk-view-animate" id="loginPage">
+			  <div class="mk-login-inner">
+					<h3 class="login-logo ng-binding">MARK</h3>
+					<div class="login-intro">
+					   记录读过的书
+					</div>
+		
+					<form class="login-form" name="loginForm">
+						<div class="form-group">
+							<input type="text" class="form-control" placeholder="邮箱" id="loginEmail" onblur="javascript:login.validateEmail();" value = "test@hdc.com">
+                            <div id ="errorLoginEmail" class="login_err"></div>
+						</div>
+						<p class="text-danger"></p>
+						<div class="form-group">
+						  <input type="password" class="form-control" placeholder="密码" id = "loginPwd" onblur="javascript:login.validatePwd();" value = "test">
+                          <div id ="errorLoginPwd" class="login_err"></div>
+						</div> 
+						<button type="button" class="btn btn-default" onclick="javascript:login.loginAjax();">提  交</button>
+					</form>
+			  </div>
+	   </div>
+	   
+	   <div class="square" id="registerDiv">
+	      <span id="sptx">注 册</span>
+	   </div>
+	   
+	   <div class="tall-toolbar colored wide" style="display:none;" id="registerPage">
+	           <div class="back">
+			  	   <div icon="check" class="core-icon icon" id="registerBack">
+						<svg viewBox="0 0 24 24" height="100%" width="100%" preserveAspectRatio="xMidYMid meet" 
+							fit="" style="pointer-events: none; display: block;">
+							<g>
+								<path d="M20,11H7.8l5.6-5.6L12,4l-8,8l8,8l1.4-1.4L7.8,13H20V11z"></path>
+							</g>
+						</svg>
+				   </div>
+			  </div>
+			  
+        		<div class="mk-r-card">
+          			<div style="-webkit-transform-origin: 0px 0px 0px; border-radius: 0px;height: 176px;">
+						<div class="mk-r-title">现在就注册</div>
+						<div class="fab white">
+            				<div icon="check" class="core-icon">
+								<svg viewBox="0 0 24 24" height="100%" width="100%" preserveAspectRatio="xMidYMid meet" class="fit" style="pointer-events: none; display: block;"><g><polygon points="9,16.2 4.8,12 3.4,13.4 9,19 21,7 19.6,5.6 "></polygon></g></svg>
+						   </div>
+          				</div>
+          			</div>
+
+          			<div class="mk-r-form">
+            			<div class="mk-f-inner">
+							<input placeholder="用户名" type="text"/><br/>
+							<input placeholder="邮  箱" type="email"/><br/>
+							<input placeholder="密  码" type="password" />
+            			</div>
+          		   </div>
+              </div>
+        </div>
+		
+      </div>
+	  
+</body>
+</html>
